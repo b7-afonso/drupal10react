@@ -1,0 +1,22 @@
+name: bianca_demo
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - bianca_demo/base
+  - bianca_demo/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - bianca_demo/user
+  core/drupal.dropbutton:
+    - bianca_demo/dropbutton
+  core/drupal.dialog:
+    - bianca_demo/dialog
+  file/drupal.file:
+    - bianca_demo/file
+  core/drupal.progress:
+    - bianca_demo/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.0.7'
